@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'valloric/youcompleteme'
+Plugin 'rust-lang/rust.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
@@ -17,6 +18,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'sickill/vim-pasta'
+Plugin 'dart-lang/dart-vim-plugin'
 call vundle#end()
 
 
@@ -33,7 +36,7 @@ set wrap    " Enable line wrapping
 set number relativenumber
 set clipboard=unnamed
 set nocompatible
-set directory^=$HOME/.vim/tmp//   " Location to store swap files. disable by >>set noswapfile
+set directory^=$HOME/.vim/vimswap//   " Location to store swap files. disable by >>set noswapfile
 set noerrorbells    " Disable beep on errors
 set visualbell  " Flash the screen instead of beeping on errors
 set mouse=a     " Enable mouse for scrolling and resizing
