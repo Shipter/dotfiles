@@ -1,0 +1,5 @@
+require('plugs.packer')
+require('plugs.lsp')
+require('plugs.cmp')
+require('plugs.telescope')
+require('plugs.autopairs')

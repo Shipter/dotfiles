@@ -1,0 +1,82 @@
+# call '\alias_name' to unalias the alias
+alias vim=nvim
+alias v=nvim
+alias mnt="cd /mnt && ls"
+alias cddotfiles="cd ~/dotfiles"
+alias ozsh="nvim ~/.config/zsh/.zshrc"
+alias oalias="nvim ~/.config/zsh/.aliases"
+alias ofunc="nvim ~/.config/zsh/.func"
+alias cdnvim="cd ~/.config/nvim && la"
+alias onvim="nvim ~/.config/nvim/init.lua"
+alias osetup="nvim ~/dotfiles/setup.sh"
+ 
+# # Python
+alias python=python3
+alias ac="conda activate"
+alias dac="conda deactivate"
+alias rsvr="python manage.py runserver"
+alias mkmgs="python manage.py makemigrations"
+alias migrate="python manage.py migrate"
+alias pyshorts="echo $'ac\ndac\nrsvr\nmkmgs\nmigrate\n'"
+
+# Tree
+alias ta='tree -aC'
+alias td='tree -dC '
+alias tda='tree -daC'
+alias tl='tree -LC'
+alias tla='tree -LaC'
+alias tp='tree --ignore-case -PC'
+alias tf='tree -fC'
+alias tfa='tree -faC'
+alias tp='tree -f -P'
+
+# # Shell
+alias cls=clear
+alias h='history'
+alias j='jobs -l'
+# alias live-server='live-server --no-browser --ignore=".git"'
+ 
+# # lsd
+alias ls='ls --color=auto'
+alias l='ls --color=auto'
+alias ll='l -l'
+alias la='l -A'
+alias lla='l -lAh'
+# alias lt='ls --tree'
+# # bat
+# alias cat='batcat'
+# alias less='batcat'
+
+# Git
+alias gs='git status'
+alias gsu='git status -u'
+alias gaa='git add --All'
+alias ga.='git add .'
+alias gc='git commit -m'
+
+ 
+# Global Aliases
+alias -g G='| grep -i'
+
+alias d='dirs -v | head -10'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+# alias 1='cd -'
+# alias 2='cd -2'
+# alias 3='cd -3'
+# alias 4='cd -4'
+# alias 5='cd -5'
+# alias 6='cd -6'
+# alias 7='cd -7'
+# alias 8='cd -8'
+# alias 9='cd -9'
+
+ 
+## a quick way to get out of current directory ##
+alias cd..='cd ..'
+
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../' 

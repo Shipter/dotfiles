@@ -1,0 +1,21 @@
+take() {
+    if [ "$1" != "" ]
+    then
+        mkdir "$1"
+        cd $1
+    else
+        echo "error: Missing Directiory Name"
+    fi
+}
+
+
+pjs(){
+    if [ "$1" != "" ]
+    then
+        cd $HOME/pjs/$1
+    else
+        cd $HOME/pjs
+    fi
+    pwd
+    ls
+}
