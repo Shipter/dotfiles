@@ -1,6 +1,7 @@
 # call '\alias_name' to unalias the alias
 alias vim=nvim
 alias v=nvim
+alias vt="nvim -c 'Telescope find_files hidden=true'"
 alias mnt="cd /mnt && ls"
 alias cddotfiles="cd ~/dotfiles"
 alias ozsh="nvim ~/.config/zsh/.zshrc"

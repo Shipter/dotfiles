@@ -47,12 +47,11 @@ cd ~/apps/neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
-# Install pyright
-npm i -g pyright
-
 # Install ripgrep for nvim
 sudo apt-get install ripgrep
 
+# Install nvim-packer plugins
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 # Install miniconda
 if [ ! -d "$HOME/miniconda3" ]; then

@@ -69,7 +69,7 @@ keymap('v', '<S-Tab>', '<<Esc>gv', opts)
 -- Telescope
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
-keymap("n", "<leader>ffa", "<cmd>lua require'telescope.builtin'.find_files({hidden=true,})<cr>", opts)
+keymap("n", "<leader>faf", "<cmd>lua require'telescope.builtin'.find_files({hidden=true,})<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>lua require'telescope.builtin'.current_buffer_fuzzy_find()<cr>", opts)
 -- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 

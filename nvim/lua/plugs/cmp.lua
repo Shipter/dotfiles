@@ -25,6 +25,7 @@ vim.opt.completeopt={"menu", "menuone", "noselect"}
       { name = 'luasnip' }, -- For luasnip users.
     }, {
       { name = 'buffer' },
+      { name = 'path' },
     })
   })
 
@@ -37,4 +38,22 @@ vim.opt.completeopt={"menu", "menuone", "noselect"}
     })
   })
 
+  -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline('/', {
+    sources = {
+      { name = 'buffer' }
+    }
+  })
+
+  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline(':', {
+    sources = cmp.config.sources({
+      { name = 'path' }
+    }, {
+      { name = 'cmdline' }
+    })
+  })
+
+require("luasnip.loaders.from_vscode").lazy_load()
+require'luasnip'.filetype_extend("python", {"django"})
 

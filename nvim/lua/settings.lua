@@ -4,6 +4,9 @@ local bo = vim.bo
 
 -- Global options
 o.mouse = 'a'
+o.scrolloff = 8
+o.sidescrolloff = 10
+o.updatetime = 300
 
 -- Buffer-local options
 bo.expandtab = true
